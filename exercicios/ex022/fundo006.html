@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
+            /*
+            
+            sem SHORTHAND
+
             height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
 
+            /* Shorthand - Background
+                color > image > position > repeat > [size] > attachment
+
+                SIZE = Por enquanto não funciona, pode ser que de certo mais pra frente quando atualizarem, mas esta descrito que esta ativo no material do w3c.
+
+            */   
+            
+            /* fazendo com SHORTHAND*/
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 500px;
             padding: 10px;
             margin: auto;
             border: 1px solid blue;
@@ -33,6 +49,9 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea iure consequatur minima quos dolorum similique perspiciatis! Quae magnam ut rerum vero impedit esse minima similique quas quos! Ratione, alias Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sit fuga tempore at sint facilis exercitationem iusto ducimus aspernatur, labore unde dignissimos magnam natus dicta? Illo tenetur architecto ad exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, doloribus voluptatem id nisi fuga odit optio ipsam atque magni ullam iste deleniti. Rerum quis repellendus porro cupiditate fuga sed laborum.</et></p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea iure consequatur minima quos dolorum similique perspiciatis! Quae magnam ut rerum vero impedit esse minima similique quas quos! Ratione, alias Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sit fuga tempore at sint facilis exercitationem iusto ducimus aspernatur, labore unde dignissimos magnam natus dicta? Illo tenetur architecto ad exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, doloribus voluptatem id nisi fuga odit optio ipsam atque magni ullam iste deleniti. Rerum quis repellendus porro cupiditate fuga sed laborum.</et></p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea iure consequatur minima quos dolorum similique perspiciatis! Quae magnam ut rerum vero impedit esse minima similique quas quos! Ratione, alias Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sit fuga tempore at sint facilis exercitationem iusto ducimus aspernatur, labore unde dignissimos magnam natus dicta? Illo tenetur architecto ad exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, doloribus voluptatem id nisi fuga odit optio ipsam atque magni ullam iste deleniti. Rerum quis repellendus porro cupiditate fuga sed laborum.</et></p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea iure consequatur minima quos dolorum similique perspiciatis! Quae magnam ut rerum vero impedit esse minima similique quas quos! Ratione, alias Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sit fuga tempore at sint facilis exercitationem iusto ducimus aspernatur, labore unde dignissimos magnam natus dicta? Illo tenetur architecto ad exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, doloribus voluptatem id nisi fuga odit optio ipsam atque magni ullam iste deleniti. Rerum quis repellendus porro cupiditate fuga sed laborum.</et></p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea iure consequatur minima quos dolorum similique perspiciatis! Quae magnam ut rerum vero impedit esse minima similique quas quos! Ratione, alias Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sit fuga tempore at sint facilis exercitationem iusto ducimus aspernatur, labore unde dignissimos magnam natus dicta? Illo tenetur architecto ad exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, doloribus voluptatem id nisi fuga odit optio ipsam atque magni ullam iste deleniti. Rerum quis repellendus porro cupiditate fuga sed laborum.</et></p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea iure consequatur minima quos dolorum similique perspiciatis! Quae magnam ut rerum vero impedit esse minima similique quas quos! Ratione, alias Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sit fuga tempore at sint facilis exercitationem iusto ducimus aspernatur, labore unde dignissimos magnam natus dicta? Illo tenetur architecto ad exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, doloribus voluptatem id nisi fuga odit optio ipsam atque magni ullam iste deleniti. Rerum quis repellendus porro cupiditate fuga sed laborum.</et></p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea iure consequatur minima quos dolorum similique perspiciatis! Quae magnam ut rerum vero impedit esse minima similique quas quos! Ratione, alias Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sit fuga tempore at sint facilis exercitationem iusto ducimus aspernatur, labore unde dignissimos magnam natus dicta? Illo tenetur architecto ad exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, doloribus voluptatem id nisi fuga odit optio ipsam atque magni ullam iste deleniti. Rerum quis repellendus porro cupiditate fuga sed laborum.</et></p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea iure consequatur minima quos dolorum similique perspiciatis! Quae magnam ut rerum vero impedit esse minima similique quas quos! Ratione, alias Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sit fuga tempore at sint facilis exercitationem iusto ducimus aspernatur, labore unde dignissimos magnam natus dicta? Illo tenetur architecto ad exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, doloribus voluptatem id nisi fuga odit optio ipsam atque magni ullam iste deleniti. Rerum quis repellendus porro cupiditate fuga sed laborum.</et></p>
 
     </main>
