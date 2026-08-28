@@ -1,0 +1,17 @@
+@charset    'UTF-8';
+
+#primeira {
+    background-image: url('imagens/girassol.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: 100vh;
+    position: relative;
+
+}
+#primeira {
+    position: absolute;
+    background-color: aqua;
+    div > p {
+    color: aqua;
+    }
+}
