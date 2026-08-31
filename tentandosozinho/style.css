@@ -1,17 +1,66 @@
 @charset    'UTF-8';
-
-#primeira {
-    background-image: url('imagens/girassol.jpg');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-size: 100vh;
-    position: relative;
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
 
 }
-#primeira {
-    position: absolute;
-    background-color: aqua;
-    div > p {
-    color: aqua;
-    }
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+header > h2 {
+    padding-bottom: 50px;
+}
+
+a {
+    color: #fff;    
+    font-weight: bold;
+}
+
+a:hover , footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: #fff;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(48, 48, 48);
+    color: #fff;
+}
+
+section.imagem p{
+    width: 400px;
+    background-color: rgb(50, 50, 50);
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
 }
