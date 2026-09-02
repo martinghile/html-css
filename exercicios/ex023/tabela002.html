@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+            }
+        
+        caption {
+            background-color: lightgray;
+            color: rgb(73, 72, 72);
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 4px;
+            
+        }
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(210, 136, 136);
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead {
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tfoot {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!-- ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População por Estado</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.292.666</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.366.189</td>
+            </tr>
+             <tr>
+                <td>Rio Grande do Sul</td>
+                <td>11.422.973</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>15.203.934</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11.597.484</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td> 
+                <td>7.338.473</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td>3.094.325</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td>7.113.540</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9.616.621</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>4.269.995</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>9.187.103</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td>4.059.905</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>8.690.745</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>4.064.052</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>7.075.181</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>3.534.165</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>3.351.543</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>3.281.480</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>3.567.234</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>2.778.986</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td>1.815.278</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td>1.590.248</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>894.470</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td>877.613</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>631.181</td>
+            </tr> 
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <th>0000</th>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias accusantium necessitatibus eveniet, sapiente, velit molestiae recusandae fugiat quaerat suscipit eligendi dolorem minus! Sequi voluptatum recusandae nihil dolorem! Obcaecati, officia autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio eveniet cupiditate adipisci magnam voluptatibus ad earum modi nisi commodi nesciunt beatae laudantium perferendis vero temporibus, atque deserunt necessitatibus quo? lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum nobis earum aperiam numquam. Voluptates dolore vel sequi, eaque unde tempore consectetur aperiam exercitationem qui deleniti odit, rerum perspiciatis molestiae doloribus.
+    </p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias accusantium necessitatibus eveniet, sapiente, velit molestiae recusandae fugiat quaerat suscipit eligendi dolorem minus! Sequi voluptatum recusandae nihil dolorem! Obcaecati, officia autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio eveniet cupiditate adipisci magnam voluptatibus ad earum modi nisi commodi nesciunt beatae laudantium perferendis vero temporibus, atque deserunt necessitatibus quo? lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum nobis earum aperiam numquam. Voluptates dolore vel sequi, eaque unde tempore consectetur aperiam exercitationem qui deleniti odit, rerum perspiciatis molestiae doloribus.
+    </p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias accusantium necessitatibus eveniet, sapiente, velit molestiae recusandae fugiat quaerat suscipit eligendi dolorem minus! Sequi voluptatum recusandae nihil dolorem! Obcaecati, officia autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio eveniet cupiditate adipisci magnam voluptatibus ad earum modi nisi commodi nesciunt beatae laudantium perferendis vero temporibus, atque deserunt necessitatibus quo? lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum nobis earum aperiam numquam. Voluptates dolore vel sequi, eaque unde tempore consectetur aperiam exercitationem qui deleniti odit, rerum perspiciatis molestiae doloribus.
+    </p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias accusantium necessitatibus eveniet, sapiente, velit molestiae recusandae fugiat quaerat suscipit eligendi dolorem minus! Sequi voluptatum recusandae nihil dolorem! Obcaecati, officia autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio eveniet cupiditate adipisci magnam voluptatibus ad earum modi nisi commodi nesciunt beatae laudantium perferendis vero temporibus, atque deserunt necessitatibus quo? lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum nobis earum aperiam numquam. Voluptates dolore vel sequi, eaque unde tempore consectetur aperiam exercitationem qui deleniti odit, rerum perspiciatis molestiae doloribus.
+    </p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias accusantium necessitatibus eveniet, sapiente, velit molestiae recusandae fugiat quaerat suscipit eligendi dolorem minus! Sequi voluptatum recusandae nihil dolorem! Obcaecati, officia autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio eveniet cupiditate adipisci magnam voluptatibus ad earum modi nisi commodi nesciunt beatae laudantium perferendis vero temporibus, atque deserunt necessitatibus quo? lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum nobis earum aperiam numquam. Voluptates dolore vel sequi, eaque unde tempore consectetur aperiam exercitationem qui deleniti odit, rerum perspiciatis molestiae doloribus.
+    </p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias accusantium necessitatibus eveniet, sapiente, velit molestiae recusandae fugiat quaerat suscipit eligendi dolorem minus! Sequi voluptatum recusandae nihil dolorem! Obcaecati, officia autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio eveniet cupiditate adipisci magnam voluptatibus ad earum modi nisi commodi nesciunt beatae laudantium perferendis vero temporibus, atque deserunt necessitatibus quo? lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum nobis earum aperiam numquam. Voluptates dolore vel sequi, eaque unde tempore consectetur aperiam exercitationem qui deleniti odit, rerum perspiciatis molestiae doloribus.
+    </p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias accusantium necessitatibus eveniet, sapiente, velit molestiae recusandae fugiat quaerat suscipit eligendi dolorem minus! Sequi voluptatum recusandae nihil dolorem! Obcaecati, officia autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio eveniet cupiditate adipisci magnam voluptatibus ad earum modi nisi commodi nesciunt beatae laudantium perferendis vero temporibus, atque deserunt necessitatibus quo? lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum nobis earum aperiam numquam. Voluptates dolore vel sequi, eaque unde tempore consectetur aperiam exercitationem qui deleniti odit, rerum perspiciatis molestiae doloribus.
+    </p>
+</body>
+
+</html>
