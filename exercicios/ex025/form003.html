@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ::placeholder {
+            color: rgba(57, 42, 57, 0.544);
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(208, 208, 208, 0.442);
+        }
+        h1 {
+            margin: 80px 0px 20px 0px;
+            text-align: center;
+        }
+        form {
+            background-color: rgb(161, 185, 161);
+            width: 400px;
+            border-radius: 23px;
+            padding: 3px 10px;
+            margin: auto;
+
+        }
+        form > p > input {
+            border: 1px solid rgb(8, 56, 84);
+            border-radius: 8px;
+            font-size: 14px;
+            color: rgb(8, 56, 84);
+        }
+        label {
+            color: rgb(8, 56, 84);
+            font-weight: bold;
+            width: 80px;
+        }
+    
+        .btn {
+            background: linear-gradient(rgb(77, 128, 86), rgb(9, 30, 13));
+            color: #fff;
+            padding: 5px 10px;
+            border: 1px solid darkgray;
+            box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.453);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="inome" id="name">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo"
+                autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" step=".5" placeholder="Média">
+        </p>
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+        <p>
+            <input class="btn" type="submit" value="Enviar">
+            <input class="btn" type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+</html>
